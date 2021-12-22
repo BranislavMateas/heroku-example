@@ -4,7 +4,6 @@ import hashlib
 app = Flask(__name__)
 
 @app.route("/")
-@app.route("/name/<name>")
 def hello_there(name: str = "General Kenobi"):
     return f"<p>Hello there, {name}!</p>"
 
